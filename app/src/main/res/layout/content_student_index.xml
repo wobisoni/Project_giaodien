@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.wobisoni.cndd_cdn_finalproject.StudentIndex"
+    tools:showIn="@layout/app_bar_student_index">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Mã số sinh viên:"
+        android:textStyle="bold"
+        tools:textColor="@android:color/black"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv7"
+        android:layout_below="@+id/tv7"
+        android:layout_marginTop="26dp"
+        android:text="Tên sinh viên:"
+        android:textStyle="bold"
+        tools:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv2"
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="26dp"
+        android:text="Lớp sinh hoạt:"
+        android:textStyle="bold"
+        tools:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv3"
+        android:layout_below="@+id/tv3"
+        android:layout_marginTop="26dp"
+        android:text="Giới tính:"
+        android:textStyle="bold"
+        tools:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv4"
+        android:layout_below="@+id/tv4"
+        android:layout_marginTop="26dp"
+        android:text="Địa chỉ:"
+        android:textStyle="bold"
+        tools:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv5"
+        android:layout_below="@+id/tv5"
+        android:layout_marginTop="26dp"
+        android:text="Số điện thoại:"
+        android:textStyle="bold"
+        tools:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvGvMsgv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="102130148"
+        android:layout_alignBaseline="@+id/tv7"
+        android:layout_alignBottom="@+id/tv7"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvGvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv2"
+        android:layout_alignStart="@+id/tvGvMsgv"
+        android:text="Nguyễn Văn Cao" />
+
+    <TextView
+        android:id="@+id/tvGvClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv3"
+        android:layout_alignStart="@+id/tvGvName"
+        android:text="13T4" />
+
+    <TextView
+        android:id="@+id/tvGvGioitinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv4"
+        android:layout_alignStart="@+id/tvGvClass"
+        android:text="Nam" />
+
+    <TextView
+        android:id="@+id/tvGvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv6"
+        android:layout_alignStart="@+id/tvGvGioitinh"
+        android:text="147 Mai Thúc Loan, Thừa Thiên Huế" />
+
+    <TextView
+        android:id="@+id/tvSvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvGvAddress"
+        android:layout_alignTop="@+id/tv6"
+        android:text="01657400795" />
+
+    <Button
+        android:id="@+id/btnSvEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:text="Cập nhật thông tin"
+        android:textStyle="bold" />
+</RelativeLayout>

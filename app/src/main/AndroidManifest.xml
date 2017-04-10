@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wobisoni.cndd_cdn_finalproject">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StudentIndex"
+            android:label="@string/title_activity_student_index"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TeacherIndex"
+            android:label="@string/title_activity_teacher_index"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TeacherNhapDiem"
+            android:label="@string/title_activity_teacher_nhap_diem"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TeacherDiemDanh"
+            android:label="@string/title_activity_teacher_diem_danh"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StudentXemDiem"
+            android:label="@string/title_activity_student_xem_diem"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StudentXemTKB"
+            android:label="@string/title_activity_student_xem_tkb"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"></activity>
+    </application>
+
+</manifest>

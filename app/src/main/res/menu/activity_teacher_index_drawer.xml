@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_gv_profile"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Thông tin cá nhân" />
+        <item
+            android:id="@+id/nav_gv_diemdanh"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Điểm danh" />
+        <item
+            android:id="@+id/nav_gv_nhapdiem"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Nhập điểm" />
+        <item
+            android:id="@+id/nav_gv_logout"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Đăng xuất" />
+    </group>
+
+</menu>

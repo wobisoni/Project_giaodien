@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.wobisoni.cndd_cdn_finalproject.TeacherNhapDiem"
+    tools:showIn="@layout/app_bar_teacher_nhap_diem">
+
+    <TextView
+        android:id="@+id/tvGvNhapdiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Danh sách sinh viên"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:textColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:id="@+id/lvGvNhapdiem"
+        android:layout_width="340dp"
+        android:layout_height="380dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etGvSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/lvGvNhapdiem"
+        android:layout_alignStart="@+id/lvGvNhapdiem"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:id="@+id/btnGvSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tìm kiếm"
+        android:layout_alignTop="@+id/etGvSearch"
+        android:layout_alignEnd="@+id/lvGvNhapdiem" />
+</RelativeLayout>
